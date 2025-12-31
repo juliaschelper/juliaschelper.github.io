@@ -1,0 +1,441 @@
+/* Basic styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  border: 0;
+  border-radius: 0.1875rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2); }
+  .card .card-body {
+    min-height: 190px; }
+  .card[data-background-color="orange"] {
+    background-color: #378C3F; }
+  .card[data-background-color="red"] {
+    background-color: #FF3636; }
+  .card[data-background-color="yellow"] {
+    background-color: #FFB236; }
+  .card[data-background-color="blue"] {
+    background-color: #2CA8FF; }
+  .card[data-background-color="green"] {
+    background-color: #18ce0f; }
+
+
+
+
+/* About Section Styling */
+
+#about {
+margin-top: 50px;
+  border-radius: 5px;
+
+}
+
+about-img {
+padding-bottom: 30px;
+  text-align: center;
+}
+
+.about-img img {
+  border-radius: 10px;
+  max-height: 500px;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-top: 300px
+}
+
+.about-content {
+  padding: 60px;
+}
+
+.about-content h2 {
+  margin-bottom: 10px;
+}
+
+.about-content p, a {
+  margin-bottom: 5px;
+}
+
+.about-content a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-content a:hover {
+  color: #007bff;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-content ul li {
+  margin-bottom: 5px;
+}
+
+
+
+#skills {
+  margin-top: 100px;
+  border-radius: 5px;
+}
+
+
+
+
+/* Professional Skills Style */
+.progress-container {
+  margin-bottom: 20px;
+  font-size: 18px; }
+  .progress-container .progress-bar {
+    height: 5px;
+    transform: scaleX(0);
+    transition: transform 2s ease-in-out;
+    transform-origin: 0% 0%; }
+  .progress-container .progress {
+    height: 5px;
+    font-size: 18px; }
+  .progress-container .aos-animate {
+    transform: scaleX(1); }
+
+    .progress-container .progress .progress-value {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #888;
+      font-size: 0.8571em; }
+
+
+/* Projects Section Styling */
+#myBtnContainer {
+  display: flex;
+  justify-content: center;
+    margin: 0 auto 30px; /* Added 30px bottom margin */
+  text-align: center;
+  width: 100%;
+}
+/* Style the buttons */
+.btn-selection {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+/* Add a light grey background on mouse-over */
+.btn-selection:hover {
+  background-color: #ddd;
+}
+/* Add a dark background to the active button */
+.btn-selection.active {
+  background-color: #666;
+    border: none;
+  outline: none;
+  color: white;
+}
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+
+
+
+/* Additional CSS for Contact Section */
+.btn-circle {
+ margin-right: 20px;
+    width: 70px;
+    height: 70px;
+ border-radius: 50%!important;
+  padding: 0.75rem 0.75rem!important;
+    text-align: center;
+}
+
+.btn-circle:hover {
+      opacity: 0.7;
+  }
+
+
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+.icon-leetcode{
+  background-image : url(assets/icons/leetcode.png);
+ background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+.icon-upwork{
+  background-image : url(assets/icons/upwork.png);
+ background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+
+
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body {
+  padding-top: 0px; /* Adjust this value based on the height of your navbar */
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("assets/images/background.jpg") no-repeat center center fixed;
+      background-size: cover;
+}
+
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+
+
+/* Projects */
+
+#projects {
+  background-size: cover;
+  margin-top: 0;
+  padding-bottom: 100px;
+}
+
+#projects .row {
+
+  row-gap: 30px;    /* Adds space only between vertical rows */
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.filterDiv { display: none; }
+.show { display: block; }
+
+
+.image-container .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #808080;
+  opacity: 0;
+  transition: opacity;
+}
+
+.overlay-text {
+  color: white;
+  font-size:  1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.8;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center;
+}
+
+.image-container:hover .overlay { opacity: 1; }
+
+/* Testimonials */
+
+#testimonials {
+  border-radius: 5px;
+  padding-bottom: 40px !important;
+  background-size: cover;
+  padding-top: 300px;
+}
+
+/* Testimonial rating styles */
+.testimonial-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rating-stars {
+    color: #ffc107; /* Gold color for stars */
+    font-size: 14px;
+}
+
+.rating-number {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+#testimonials .testimonial-card {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 10px;
+}
+#testimonials .testimonial-quote {
+  font-style: italic;
+  color: #333;
+}
+
+#testimonialCarousel .carousel-indicators {
+    bottom: -10px; /* Adjust this value to move indicators up or down */
+    margin-bottom: 0;
+}
+#testimonials .carousel-indicators li {
+  background-color: #333;
+      width: 20px;
+  height: 5px;
+}
+#testimonials .carousel-indicators .active {
+  background-color: #007bff;
+    width: 20px;
+  height: 5px;
+}
+
+#testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+#testimonialCarousel .carousel-control-prev { left: -70px; }
+#testimonialCarousel .carousel-control-next { right: -70px; }
+@media (max-width: 576px) {
+  #testimonialCarousel .carousel-control-prev { left: -12px; }
+  #testimonialCarousel .carousel-control-next { right: -12px; }
+}
+
+
+
+/* Navigation styling */
+.navbar {
+  opacity: 0.9;
+}
+
+.btn-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  padding: 6px 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.428571429;
+}
