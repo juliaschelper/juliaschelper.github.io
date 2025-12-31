@@ -1,0 +1,33 @@
+{
+    "home": "Start",
+    "about-heading": "Über mich",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "testimonial": "Rezensionen",
+    "contact": "Kontakt",
+
+
+      "hi-im": "👋 Hallo, ich bin Julia",
+    "job-title": "Übersetzerin & Lektorin",
+    "cv-en": "Lebenslauf Englisch",
+    "cv-de": "Lebenslauf Deutsch",
+"about-text-1": "Seit 2022 arbeite ich als freiberufliche <b>Übersetzerin und Lektorin</b> – mit einer großen Liebe zu Sprache, Geschichten und gutem Stil. Ich biete <b>Lektorate und Korrektorate</b> an, übersetze <b>Bücher aus dem Englischen ins Deutsche</b> und übernehme <b>Übersetzungslektorate</b>, um Texte sprachlich wie stilistisch zum Strahlen zu bringen. Meine Schwerpunkte liegen dabei auf Romance, Fantasy, Thriller und Sci-Fi (inklusive ihrer Sub-Genre).",
+  "about-text-2": "Bevor ich mich im September 2022 selbstständig gemacht habe, habe ich an der <b>TU Dortmund Amerikanistik, Anglistik</b> und <b>Germanistik</b> im Bachelor und Master studiert. Diese Kombination hat meine Liebe zu Sprachen und zur Literatur noch vertieft – und bildet heute die Grundlage meiner Arbeit: Texte, die nicht nur korrekt, sondern auch lebendig, klar und authentisch klingen.",
+   "about-text-3": "Egal, ob du gerade an deinem ersten Roman feilst, dein Buch übersetzen lassen möchtest oder einfach jemanden suchst, der deinen Text mit Leidenschaft und einem feinen Gespür für Sprache begleitet – dann bist du hier genau richtig.",
+    "services-title": "Services",
+
+    "about-title": "Über mich",
+    "education": "Ausbildung",
+
+  "projects" : "Arbeiten",
+  "filter-all": "Alle",
+    "filter-translation": "Übersetzung",
+    "filter-proofreading": "Lektorat",
+    "filter-other": "Weitere Übersetzungsdienste",
+
+
+    "click-for-more": "KLICKE FÜR MEHR",
+
+  "testimonials-title" : "Rezensionen"
+
+}
