@@ -18,51 +18,54 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="Logo">
+<!-- =================== HOME SECTION ===================================== -->
+<section id="home">
+    <div class="container text-center">
+        <div class="about-img">
+            <img src="assets/images/profile.jpg" alt="Placeholder for your profile picture">
         </div>
-        <nav>
-            <ul>
-           <a href="#" class="active" onclick="loadContent('about_me')">Über mich</a>
-            <a href="#" onclick="loadContent('services')">Lektoratsservice</a>
-            <a href="#" onclick="loadContent('projects')">Portfolio</a>
-            <a href="#" onclick="loadContent('testimonials')">Autorenstimmen</a>
 
-                 <li class="nav-item dropdown" style="list-style: none; display: inline-block;">
-                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data- data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span id="currentFlag" class="fi fi-gb"></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
-                        <a class="dropdown-item" href="#" data-language="en">
-                            <span class="fi fi-gb me-2"></span> English
-                        </a>
-                        <a class="dropdown-item" href="#" data-language="de">
-                            <span class="fi fi-de me-2"></span> Deutsch
-                        </a>
+        <div class="about-img">
+            <h3 data-translate="hi-im"></h3>
+            <p data-translate="job-title">Übersetzerin & Lektorin2</p>
+            <a href=assets/resumee/CV_English.pdf download="CV_Hendrik_Staendker.pdf" class="btn btn-primary" data-translate="cv-en">Resume English</a>
+            <a href=assets/resumee/CV_German.pdf download="Lebenslauf_Hendrik_Ständker.pdf" class="btn btn-primary" data-translate="cv-de">Resume German</a>
+        </div>
+    </div>
+
+
+</section>
+
+
+<!-- =================== ABOUT SECTION ===================================== -->
+<section id="about">
+    <div class="container">
+                <div class="h4 text-center mb-4 title" data-translate="about-title">Über mich</div>
+
+        <div class="card" data-aos="fade-right" data-aos-offset="10">
+            <div class="row">
+                <div class="card-body px-4 px-md-5">
+                                            <p data-translate="about-text-1">...</p>
+                                            <p data-translate="about-text-2">...</p>
+                                            <p data-translate="about-text-3">...</p>
+
                     </div>
-                </li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <main id="content-area">
-
-                <!-- About Me Section -->
-                <section id="about_me" class="content-section">
-                    <h1 class="cursive-title">Über mich</h1>
-                    <p>Hier steht der Text über dich...</p>
-                </section>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 
 
-     <!-- Services Section -->
-                <section id="services" class="content-section" style="display:none;">
+<!-- =================== SKILL/SERVICES SECTION ===================================== -->
+<section id="services">
+    <div class="container">
+        <div class="h4 text-center mb-4 title" data-translate="services-title">Services</div>
+
         <div class="row" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <!-- Lektorat -->
-  <div class="col-12 mb-4">
-      <div class="card h-100">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
                     <div class="card-body">
                         <h3 class="h5 font-weight-bold">Lektorat</h3>
                         <p>
@@ -75,8 +78,8 @@
             </div>
 
             <!-- Korrektorat -->
-  <div class="col-12 mb-4">
-      <div class="card h-100">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
                     <div class="card-body">
                         <h3 class="h5 font-weight-bold">Korrektorat</h3>
                         <p>
@@ -89,8 +92,8 @@
             </div>
 
             <!-- Übersetzung -->
-  <div class="col-12 mb-4">
-      <div class="card h-100">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
                     <div class="card-body">
                         <h3 class="h5 font-weight-bold">Übersetzung</h3>
                         <p>
@@ -104,8 +107,8 @@
             </div>
 
             <!-- Übersetzungslektorat -->
-  <div class="col-12 mb-4">
-      <div class="card h-100">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
                     <div class="card-body">
                         <h3 class="h5 font-weight-bold">Übersetzungslektorat</h3>
                         <p>
@@ -121,22 +124,50 @@
         <p class="mt-3">
 
         </p>
+    </div>
 </section>
 
 
 
-   <section id="projects" class="content-section" style="display:none;">
-        <div class="container">
+<!-- =================== work together SECTION ===================================== -->
+<section id="work_together">
+    <div class="container">
+        <div class="h4 text-center mb-4 title" data-translate="work_together-title">Du hast Interesse an einer Zusammenarbeit?</div>
+        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="card-body">
 
-                     <!-- Control buttons -->
-    <div id="myBtnContainer">
-      <button class="btn-selection active" onclick="filterSelection('all')" data-translate="filter-all"> all</button>
-      <button class="btn-selection" onclick="filterSelection('book_translation')" data-translate="filter-translation"> book translation</button>
-      <button class="btn-selection" onclick="filterSelection('book_proofreading')" data-translate="filter-proofreading"> book proofreading</button>
-        <button class="btn-selection" onclick="filterSelection('other')" data-translate="filter-other"> other translation services</button>
+    Dann schreib mir gerne ein E-Mail an julia.sophie@posteo.de
+Am besten schickst du mir gleich eine kurze Inhaltsangabe, das Genre und das erste Kapitel deines Manuskripts mit. So kann ich mir ein gutes Bild von deiner Geschichte machen.
+Ich melde mich dann zeitnah mit einem detaillierten Angebot zurück – inklusive Zeitplan und Budget.
 
+
+                 Auf Anfrage führe ich gern ein Probelektorat bzw. eine Probeübersetzung durch.
+                   <a href="mailto:julia.sophie@posteo.de" class="btn btn-primary mt-3">
+                        Send me an email
+                    </a>
+
+ </div>
+        </div>
     </div>
-            <div class="row" data-aos="fade-up" data-aos-offset="10">
+</section>
+
+
+<!-- =================== PROJECTS SECTION ===================================== -->
+<section id="projects">
+
+    <div class="container">
+
+        <div class="h4 text-center mb-4 title" data-translate="projects">Projects</div>
+
+                 <!-- Control buttons -->
+<div id="myBtnContainer">
+  <button class="btn-selection active" onclick="filterSelection('all')" data-translate="filter-all"> all</button>
+  <button class="btn-selection" onclick="filterSelection('book_translation')" data-translate="filter-translation"> book translation</button>
+  <button class="btn-selection" onclick="filterSelection('book_proofreading')" data-translate="filter-proofreading"> book proofreading</button>
+    <button class="btn-selection" onclick="filterSelection('other')" data-translate="filter-other"> other translation services</button>
+
+</div>
+        <div class="row" data-aos="fade-up" data-aos-offset="10">
 
 
 
@@ -368,25 +399,24 @@
 </section>
 
 
-
 <!-- =================== TESTMONIALS SECTION ===================================== -->
-   <section id="testimonials" class="content-section" style="display:none;">
+<section id="testimonials" class="py-5">
   <div class="container">
+    <h2 class="text-center mb-4" data-translate="testimonials-title">What clients say</h2>
+
     <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
      <ol class="carousel-indicators">
         <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#testimonialCarousel" data-slide-to="1"></li>
-
       </ol>
 
       <div class="carousel-inner">
 
    <!-- Slide 1 -->
         <div class="carousel-item active">
-
           <div class="row">
-          <div class="col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100 shadow-sm testimonial-card">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
@@ -411,8 +441,7 @@
                 </div>
               </div>
             </div>
-
-          <div class="col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100 shadow-sm testimonial-card">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
@@ -437,9 +466,7 @@
                 </div>
               </div>
             </div>
-
-
-                         <div class="col-md-6 mb-4">
+            <div class="col-lg-4 d-none d-lg-block mb-4">
               <div class="card h-100 shadow-sm testimonial-card">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
@@ -464,41 +491,13 @@
                 </div>
               </div>
             </div>
-
-
-                         <div class="col-md-6 mb-4">
-                <div class="card h-100 shadow-sm testimonial-card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="testimonial-avatar mr-3">
-                      <i class="fas fa-user-circle fa-3x text-secondary"></i>
-                    </div>
-                    <div>
-                      <h5 class="card-title mb-0">Matt Weatherly</h5>
-                      <div class="testimonial-rating mt-1">
-                        <span class="rating-stars">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                        </span>
-                        <span class="rating-number">5.0</span>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="card-text testimonial-quote">"Another great project with Julia - very fast and easy to work with! Thank you!"</p>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
 
         <!-- Slide 2 -->
         <div class="carousel-item">
           <div class="row">
-              <div class="col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100 shadow-sm testimonial-card">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
@@ -523,7 +522,7 @@
                 </div>
               </div>
             </div>
-          <div class="col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100 shadow-sm testimonial-card">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
@@ -548,7 +547,31 @@
                 </div>
               </div>
             </div>
-
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100 shadow-sm testimonial-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="testimonial-avatar mr-3">
+                      <i class="fas fa-user-circle fa-3x text-secondary"></i>
+                    </div>
+                    <div>
+                      <h5 class="card-title mb-0">Matt Weatherly</h5>
+                      <div class="testimonial-rating mt-1">
+                        <span class="rating-stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="rating-number">5.0</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card-text testimonial-quote">"Another great project with Julia - very fast and easy to work with! Thank you!"</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -566,44 +589,119 @@
   </div>
 </section>
 
-        </main>
+
+<!-- =================== CONTACT SECTION ===================================== -->
+<section id="contact" class="contact-section text-center text-black bg-dark">
+
+    <h2 data-translate="contact">Contact Me</h2>
+    <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <p><i class="bi bi-envelope"></i> julia.sophie@posteo.de</p>
+     <p>
+                <a href="https://wa.me/4915679721322" target="_blank" class="text-white" style="text-decoration: none;">
+                    <i class="bi bi-whatsapp"></i> <i class="bi bi-telephone"></i>  +4915679721322
+                </a>
+            </p>        <button type="button" class="btn btn-default btn-lg btn-round"><span class="glyphicon glyphicon-retweet"></span>
+        </button>
+        <!-- Section: Social media -->
+        <section class="mb-2">
+               <!-- Amazon -->
+            <a
+                    data-mdb-ripple-init
+                    class="btn btn-default btn-circle text-white btn-floating"
+                    style="background-color: #000000;"
+                    title="Amazon"
+                    href="https://www.amazon.de/-/e/B0FWC9TC2B "
+                    target="_blank"
+                    role="button"
+            ><i class="bi bi-amazon fa-2x"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+                    data-mdb-ripple-init
+                    class="btn btn-default btn-circle text-white btn-floating"
+                    style="background-color: #0082ca;"
+                    title="Linkedin"
+                    href="https://www.linkedin.com/in/julia-sophie-schelper-52846a253/"
+                    target="_blank"
+                    role="button"
+            ><i class="bi bi-linkedin fa-2x"></i></a>
 
 
+        </section>
+        <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+            <h6>Developed by Hendrik Ständker</h6>
 
-        <aside class="sidebar">
-            <div class="profile-card">
+        <!-- Copyright -->
 
-        <div class="about-img">
-            <img src="assets/images/profile.jpg" alt="Placeholder for your profile picture">
-        </div>                <h3 class="cursive-title">Lektorin & Autorin</h3>
-                <p>Ich .</p>
+        <a href="https://www.freepik.com/free-vector/geometric-abstract-background-with-connected-dots-lines_25861911.htm#fromView=search&page=1&position=45&uuid=6fe7e979-5679-47c7-9706-93873ba23000">Background image
+            by vector_corp on Freepik</a>
 
-                <div class="social-icons">
-                    <span class="icon">IG</span>
-                    <span class="icon">A</span>
-                    <span class="icon">YT</span>
-                    <span class="icon">SP</span>
-                </div>
+        <div class="text-center p-3">
+            © 2025 Copyright: Julia Schelper
+             </div>
+        <!-- Copyright -->
+    </footer>
 
-                <div class="sidebar-buttons">
-                    <a href="#" class="btn">Impressum</a>
-                    <a href="#" class="btn">Kontakt</a>
-                    <a href="#" class="btn">Datenschutz</a>
-                </div>
 
-                <div class="newsletter">
-                    <h4>Newsletter</h4>
-                    <input type="email" placeholder="Email-Adresse *">
-                </div>
+    </div>
+</section>
+
+
+<!-- =================== NAVIGATION BAR SECTION ===================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-translate="about" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services" data-translate="services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects" data-translate="projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials" data-translate="testimonials-title">Testimonials</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" data-translate="contact">Contact</a>
+                </li>
+
+                <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span id="currentFlag" class="fi fi-gb"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="#" data-language="en">
+                    <span class="fi fi-gb me-2"></span> English
+                </a>
+                <a class="dropdown-item" href="#" data-language="de">
+                    <span class="fi fi-de me-2"></span> Deutsch
+                </a>
             </div>
-        </aside>
+        </li>
 
 
-
-
-    </main>
-
-
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <!-- =================== MODAL SECTION ===================================== -->
 <!-- Modal truck camper-->
@@ -634,41 +732,6 @@
 
 <!-- ======================================================================= -->
 
- <script>
-                 function loadContent(sectionId) {
-                // 1. Get all sections
-                const sections = document.querySelectorAll('.content-section');
-
-                // 2. Hide all of them
-                sections.forEach(section => {
-                    section.style.display = 'none';
-                });
-
-                // 3. Show the requested section
-                const activeSection = document.getElementById(sectionId);
-                if (activeSection) {
-                    activeSection.style.display = 'block';
-                }
-            }
-    </script>
-
-
-        <script>
-            document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', function() {
-            // Remove 'active' class from all links
-            document.querySelectorAll('nav a').forEach(item => item.classList.remove('active'));
-
-            // Add 'active' class to the clicked link
-            this.classList.add('active');
-        });
-    });
-
-    // Initialize the default view
-    document.addEventListener('DOMContentLoaded', () => {
-        loadContent('about_me');
-    });
-        </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -685,6 +748,7 @@
 
  <script src="language_switcher.js"></script>
  <script src="project_filter.js"></script>
+
 
 </body>
 </html>
