@@ -20,13 +20,13 @@
     "education": "Ausbildung",
 
   "projects" : "Arbeiten",
-  "filter-all": "Alle",
-    "filter-translation": "Übersetzung",
-    "filter-proofreading": "Lektorat",
-    "filter-other": "Weitere Übersetzungsdienste",
+  "filter-all": "all",
+    "filter-translation": "translations",
+    "filter-proofreading": "leko",
+    "filter-other": "furhter services",
 
 
-    "click-for-more": "KLICKE FÜR MEHR",
+    "click-for-more": "Click for more",
 
 
       "testimonials-title" : "Testimonials"
