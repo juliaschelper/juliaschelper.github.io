@@ -19,6 +19,7 @@
 <body>
 
     <header>
+        <div class="container">
         <div class="logo">
             <img src="assets/images/logo.png" alt="Logo">
         </div>
@@ -45,6 +46,7 @@
 
             </ul>
         </nav>
+        </div>
     </header>
 
     <main class="container">
@@ -52,8 +54,14 @@
 
                 <!-- About Me Section -->
                 <section id="about_me" class="content-section">
-                    <h1 class="cursive-title">Über mich</h1>
-                    <p>Hier steht der Text über dich...</p>
+                             <div class="row">
+                <div class="card-body px-4 px-md-5">
+                                            <p data-translate="about-text-1">...</p>
+                                            <p data-translate="about-text-2">...</p>
+                                            <p data-translate="about-text-3">...</p>
+
+                    </div>
+            </div>
                 </section>
 
 
@@ -381,7 +389,7 @@
 
           <div class="row">
           <div class="col-md-6 mb-4">
-              <div class="card h-100 shadow-sm testimonial-card">
+              <div class="card h-100 shadow-sm">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
                     <div class="testimonial-avatar mr-3">
@@ -407,7 +415,7 @@
             </div>
 
           <div class="col-md-6 mb-4">
-              <div class="card h-100 shadow-sm testimonial-card">
+              <div class="card h-100 shadow-sm ">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
                     <div class="testimonial-avatar mr-3">
@@ -434,7 +442,7 @@
 
 
                          <div class="col-md-6 mb-4">
-              <div class="card h-100 shadow-sm testimonial-card">
+              <div class="card h-100 shadow-sm ">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
                     <div class="testimonial-avatar mr-3">
@@ -461,7 +469,7 @@
 
 
                          <div class="col-md-6 mb-4">
-                <div class="card h-100 shadow-sm testimonial-card">
+                <div class="card h-100 shadow-sm ">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
                     <div class="testimonial-avatar mr-3">
@@ -493,7 +501,7 @@
         <div class="carousel-item">
           <div class="row">
               <div class="col-md-6 mb-4">
-              <div class="card h-100 shadow-sm testimonial-card">
+              <div class="card h-100 shadow-sm ">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
                     <div class="testimonial-avatar mr-3">
@@ -518,7 +526,7 @@
               </div>
             </div>
           <div class="col-md-6 mb-4">
-              <div class="card h-100 shadow-sm testimonial-card">
+              <div class="card h-100 shadow-sm ">
                 <div class="card-body">
                   <div class="d-flex align-items-center mb-3">
                     <div class="testimonial-avatar mr-3">
@@ -571,23 +579,42 @@
         </div>                <h3 class="cursive-title">Lektorin & Autorin</h3>
                 <p>Ich .</p>
 
-                <div class="social-icons">
-                    <span class="icon">IG</span>
-                    <span class="icon">A</span>
-                    <span class="icon">YT</span>
-                    <span class="icon">SP</span>
-                </div>
 
-                <div class="sidebar-buttons">
-                    <a href="#" class="btn">Impressum</a>
-                    <a href="#" class="btn">Kontakt</a>
-                    <a href="#" class="btn">Datenschutz</a>
-                </div>
 
-                <div class="newsletter">
-                    <h4>Newsletter</h4>
-                    <input type="email" placeholder="Email-Adresse *">
-                </div>
+                <h2 data-translate="contact">Contact Me</h2>
+    <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <p><i class="bi bi-envelope"></i> julia.sophie@posteo.de</p>
+     <p>
+                <a href="https://wa.me/4915679721322" target="_blank" class="text-white" style="text-decoration: none;">
+                    <i class="bi bi-whatsapp"></i> <i class="bi bi-telephone"></i>  +4915679721322
+                </a>
+            </p>        <button type="button" class="btn btn-default btn-lg btn-round"><span class="glyphicon glyphicon-retweet"></span>
+        </button>
+        <!-- Section: Social media -->
+        <section class="mb-2">
+               <!-- Amazon -->
+            <a
+                    data-mdb-ripple-init
+                    class="btn btn-default btn-circle text-white btn-floating"
+                    style="background-color: #000000;"
+                    title="Amazon"
+                    href="https://www.amazon.de/-/e/B0FWC9TC2B "
+                    target="_blank"
+                    role="button"
+            ><i class="bi bi-amazon fa-2x"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+                    data-mdb-ripple-init
+                    class="btn btn-default btn-circle text-white btn-floating"
+                    style="background-color: #0082ca;"
+                    title="Linkedin"
+                    href="https://www.linkedin.com/in/julia-sophie-schelper-52846a253/"
+                    target="_blank"
+                    role="button"
+            ><i class="bi bi-linkedin fa-2x"></i></a>
             </div>
         </aside>
 
@@ -678,6 +705,19 @@
 
  <script src="language_switcher.js"></script>
  <script src="project_filter.js"></script>
+
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <hr class="footer-divider">
+            <div class="footer-content">
+                <p class="footer-info">❀ seit 2020 | Julia Sophie Schelper – Autorin & Lektorin ❀</p>
+                <p class="footer-credits">Built using Kale Pro by <a href="#">LyraThemes</a>.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
