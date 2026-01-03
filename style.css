@@ -5,19 +5,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-      zoom: 0.8;
-
 }
 
 .content-section {
     display: none;
 }
-
-/* Show the first section by default or use a 'active' class */
-#services {
-    display: block;
-}
-
 
 
 .container {
@@ -26,9 +18,6 @@ body {
   padding: 0px 0;
     background: white;
         display: flex;
-
-
-
     gap: 40px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
@@ -41,7 +30,8 @@ header {
 }
 
 .logo img {
-    max-width: 200px;
+         max-width: 200px;
+        height: auto;
 }
  nav {
         border-top: 1px solid #ccc;
@@ -52,14 +42,15 @@ header {
     }
 
     nav ul {
-        list-style: none;
-        padding: 15px 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        font-family: 'Dancing Script', cursive;
-        font-size: 1.3rem;
+    list-style: none;
+                padding: 15px 10px;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: wrap;
+                font-family: 'Dancing Script', cursive;
+                font-size: 1.1rem;
     }
 
     nav a {
@@ -154,15 +145,27 @@ about-img {
     border-top: 1px solid #eee;
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+  @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+        }
+        #content-area {
+            width: 100%;
+        }
+        .sidebar {
+            border-left: none;
+            border-top: 1px solid #eee;
+            padding-left: 0;
+            padding-top: 20px;
+            width: 100%;
+        }
+        .cursive-title {
+            font-size: 1.8rem;
+            text-align: center;
+        }
     }
-    .sidebar {
-        border-left: none;
-        padding-left: 0;
-    }
-}
 
 
 /* Projects */
@@ -174,10 +177,6 @@ about-img {
   padding-bottom: 100px;
 }
 
-    #projects .container {
-        flex-direction: column;
-        display: block; /* Overrides the flex display if you want standard block flow */
-    }
 
 #projects .row {
   row-gap: 10px;    /* Adds space only between vertical rows */
@@ -249,6 +248,7 @@ about-img {
 
 
 /* Projects Section Styling */
+
 #myBtnContainer {
   display: flex;
   justify-content: center;
@@ -256,6 +256,7 @@ about-img {
   text-align: center;
   width: 100%;
 }
+
 /* Style the buttons */
 .btn-selection {
   border: none;
@@ -264,10 +265,12 @@ about-img {
   background-color: #f1f1f1;
   cursor: pointer;
 }
+
 /* Add a light grey background on mouse-over */
 .btn-selection:hover {
   background-color: #ddd;
 }
+
 /* Add a dark background to the active button */
 .btn-selection.active {
   background-color: #666;
@@ -275,16 +278,20 @@ about-img {
   outline: none;
   color: white;
 }
+
 .filterDiv {
   display: none; /* Hidden by default */
 }
+
+
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
 
-/* Testimonials */
 
+
+/* Testimonials */
 #testimonials {
   border-radius: 5px;
     padding-left: 30px;
