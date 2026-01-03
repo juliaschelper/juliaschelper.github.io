@@ -1,7 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #fce4ec; /* Soft pink background */
-    color: #444;
+background-color: pink !important;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -11,37 +10,45 @@ body {
     display: none;
 }
 
+   .card {
+        border-radius: 8px !important;
+    }
+
 
 .container {
-     max-width: 1000px;
   margin: 0 auto;
-  padding: 0px 0;
+  padding: 20px;
+    gap: 20px;
     background: white;
         display: flex;
-    gap: 40px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-header {
-    text-align: center;
-    background: white;
-    padding-top: 20px;
-    border-bottom: 1px solid #eee;
+
+header .container {
+    display: flex;
+        flex-direction: column; /* Stacks items vertically in rows */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: nowrap; /* Ensures everything stays in one line */
 }
+
+
+
 
 .logo img {
          max-width: 200px;
         height: auto;
 }
- nav {
+ header nav {
+         width: 100%; /* Spans the full width of the Bootstrap container */
+
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
-             max-width: 1000px; /* Matches .container width */
-
-        margin: 20px auto; /* Centers the navbar */
     }
 
-    nav ul {
+    header nav ul {
     list-style: none;
                 padding: 15px 10px;
                 margin: 0;
@@ -53,7 +60,7 @@ header {
                 font-size: 1.1rem;
     }
 
-    nav a {
+    header nav a {
         text-decoration: none;
         color: #333;
         padding: 5px 10px;
@@ -95,7 +102,7 @@ header {
 
 .sidebar {
     flex: 1;
-    border-left: 1px solid #eee;
+        border-left: 1px solid #ccc;
     padding-left: 20px;
 }
 
@@ -130,19 +137,54 @@ about-img {
     color: white;
 }
 
-.newsletter input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+.btn-circle {
+ margin-right: 20px;
+    width: 70px;
+    height: 70px;
+ border-radius: 50%!important;
+  padding: 0.75rem 0.75rem!important;
+    text-align: center;
+}
+
+.btn-circle:hover {
+      opacity: 0.7;
+  }
+
+
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
 }
 
 .focus-section {
     text-align: center;
     margin-top: 50px;
     padding-top: 20px;
-    border-top: 1px solid #eee;
 }
 
   @media (max-width: 768px) {
@@ -155,7 +197,6 @@ about-img {
             width: 100%;
         }
         .sidebar {
-            border-left: none;
             border-top: 1px solid #eee;
             padding-left: 0;
             padding-top: 20px;
@@ -246,9 +287,7 @@ about-img {
 
 .image-container:hover .overlay { opacity: 1; }
 
-
 /* Projects Section Styling */
-
 #myBtnContainer {
   display: flex;
   justify-content: center;
@@ -293,17 +332,11 @@ about-img {
 
 /* Testimonials */
 #testimonials {
-  border-radius: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-  padding-bottom: 40px !important;
+    padding-left: 50px;
+    padding-right: 35px;
   background-size: cover;
 }
 
-    #testimonials .container {
-        flex-direction: column;
-        display: block; /* Overrides the flex display if you want standard block flow */
-    }
 
 /* Testimonial rating styles */
 .testimonial-rating {
@@ -323,10 +356,7 @@ about-img {
     font-size: 14px;
 }
 
-#testimonials .testimonial-card {
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 10px;
-}
+
 #testimonials .testimonial-quote {
   font-style: italic;
   color: #333;
@@ -357,10 +387,55 @@ about-img {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
 }
-#testimonialCarousel .carousel-control-prev { left: -70px; }
-#testimonialCarousel .carousel-control-next { right: -70px; }
+#testimonialCarousel .carousel-control-prev { left: -60px; }
+#testimonialCarousel .carousel-control-next { right: -60px; }
 @media (max-width: 576px) {
   #testimonialCarousel .carousel-control-prev { left: -12px; }
   #testimonialCarousel .carousel-control-next { right: -12px; }
 }
 
+
+
+
+/* footer */
+
+.site-footer {
+    text-align: center;
+    font-family: 'Georgia', serif; /* Or your preferred elegant font */
+    color: #666;
+
+}
+
+.site-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-divider {
+border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+max-width: 1000px;
+}
+
+.footer-info {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.footer-credits {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.footer-credits a {
+    color: #ffb6c1; /* Matching the pinkish color in the image */
+    text-decoration: none;
+}
+
+.footer-credits a:hover {
+    text-decoration: underline;
+}
