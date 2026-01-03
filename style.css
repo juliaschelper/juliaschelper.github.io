@@ -3,7 +3,9 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-
+  zoom: 0.8;
+  background: url("assets/images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
@@ -57,17 +59,18 @@ padding-bottom: 30px;
 }
 
 .about-img img {
-  border-radius: 10px;
-  max-height: 500px;
-  max-width: 500px;
+   border-radius: 50%;
+      max-width: 300px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 0px;
-  margin-top: 300px
+  margin-top: 200px;
+     margin-bottom: 50px;
+
 }
 
 .about-content {
   padding: 60px;
+   margin-bottom: 100px;
 }
 
 .about-content h2 {
@@ -183,6 +186,10 @@ padding-bottom: 30px;
       opacity: 0.7;
   }
 
+#contact {
+  color: white !important;
+}
+
 
 .contact-section {
   padding: 50px 0;
@@ -240,16 +247,21 @@ padding-bottom: 30px;
 /* CSS for Sticky Navbar */
 .navbar {
   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
-}
+    min-height: 75px;
 
-/* Ensure padding is added to body to avoid content being hidden behind the navbar */
-body {
-  padding-top: 0px; /* Adjust this value based on the height of your navbar */
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background: url("assets/images/background.jpg") no-repeat center center fixed;
-      background-size: cover;
+}
+    .navbar-brand {
+      font-size: 1.5rem; /* Increases the "Portfolio" logo size */
+
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      font-size: 1.2rem; /* Increases the size of Home, About, etc. */
+    }
+
+    .navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
 }
 
 
@@ -259,14 +271,7 @@ html {
   scroll-padding-top: 80px;
 }
 
-/* Style for navigation bar links */
-.navbar-nav .nav-link {
-  color: white;
-}
 
-.navbar-nav .nav-link:hover {
-  color: #f8f9fa; /* Slightly lighter white when hovering over links */
-}
 
 /* Media query for responsive navbar collapsing */
 @media (max-width: 992px) {
@@ -274,8 +279,6 @@ html {
     background-color: #343a40; /* Same as navbar color for seamless look */
   }
 }
-
-
 
 
 /* Projects */
