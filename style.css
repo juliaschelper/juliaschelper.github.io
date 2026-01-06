@@ -215,12 +215,19 @@ about-img {
 #projects {
   background-size: cover;
   margin-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
   padding-bottom: 100px;
 }
 
 
 #projects .row {
-  row-gap: 10px;    /* Adds space only between vertical rows */
+  display: flex;
+      flex-wrap: wrap;
+}
+
+#projects .mItem {
+    padding: 5px; /* Adjust this value to increase/decrease the gap */
 }
 
 
@@ -253,7 +260,7 @@ about-img {
 
 .overlay-text {
   color: white;
-  font-size:  1.5rem;
+  font-size:  1.0rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -332,8 +339,8 @@ about-img {
 
 /* Testimonials */
 #testimonials {
-    padding-left: 50px;
-    padding-right: 35px;
+    padding-left: 55px;
+    padding-right: 50px;
   background-size: cover;
 }
 
@@ -438,4 +445,15 @@ max-width: 1000px;
 
 .footer-credits a:hover {
     text-decoration: underline;
+}
+
+
+
+/* modal */
+  .modal-project-img {
+    width: 100%;
+    height: 400px; /* Adjust this height to your liking */
+    object-fit: cover; /* Crops the image slightly to fill the area without stretching */
+    object-position: center; /* Ensures the center of the book cover is visible */
+    border-radius: 4px; /* Optional: matches card styling */
 }

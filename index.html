@@ -25,10 +25,11 @@
         </div>
         <nav>
             <ul>
-           <a href="#" class="active" onclick="loadContent('about_me')">Über mich</a>
-            <a href="#" onclick="loadContent('services')">Lektoratsservice</a>
-            <a href="#" onclick="loadContent('projects')">Portfolio</a>
-            <a href="#" onclick="loadContent('testimonials')">Autorenstimmen</a>
+           <a href="#" class="active" onclick="loadContent('about_me')" data-translate="about-me">Über mich</a>
+            <a href="#" onclick="loadContent('services')" data-translate="services">Lektoratsservice</a>
+            <a href="#" onclick="loadContent('projects')" data-translate="portfolio">Portfolio</a>
+            <a href="#" onclick="loadContent('testimonials')" data-translate="testimonials">Autorenstimmen</a>
+            <a href="#" onclick="loadContent('contact')" data-translate="contact">Kontakt</a>
 
                  <li class="nav-item dropdown" style="list-style: none; display: inline-block;">
                     <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data- data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -374,12 +375,12 @@
 
 <!-- =================== TESTMONIALS SECTION ===================================== -->
    <section id="testimonials" class="content-section" style="display:none;">
+
     <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
      <ol class="carousel-indicators">
         <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#testimonialCarousel" data-slide-to="1"></li>
-
       </ol>
 
       <div class="carousel-inner">
@@ -567,6 +568,51 @@
     </div>
 </section>
 
+
+
+
+     <!-- contact Section -->
+                    <section id="contact" class="content-section" style="display:none;">
+
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body p-4 p-md-5">
+                                <h2 class="mb-4 text-center" data-translate="contact-heading">Kontakt aufnehmen</h2>
+                                <div class="row text-center text-md-left">
+                                    <!-- Name & Address -->
+                                    <div class="col-md-6 mb-4">
+                                        <h5 class="font-weight-bold mb-3"><i class="bi bi-person-fill mr-2"></i> Julia Sophie Schelper</h5>
+                                        <p class="text-muted mb-1">Vaerstenberg 2</p>
+                                        <p class="text-muted">58313 Herdecke</p>
+                                    </div>
+                                    <!-- Digital Contact -->
+                                    <div class="col-md-6 mb-4">
+                                        <h5 class="font-weight-bold mb-3"><i class="bi bi-chat-dots-fill mr-2"></i> Erreichbarkeit</h5>
+                                        <p class="mb-2">
+                                            <a href="mailto:julia.sophie@posteo.de" class="text-decoration-none text-dark">
+                                                <i class="bi bi-envelope-at mr-2 text-primary"></i> julia.sophie@posteo.de
+                                            </a>
+                                        </p>
+                                        <p class="mb-0">
+                                            <a href="https://wa.me/4915679721322" target="_blank" class="text-decoration-none text-dark">
+                                                <i class="bi bi-whatsapp mr-2 text-success"></i> +49 1567 9721322
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr class="my-4">
+                                <div class="text-center">
+                                    <p class="mb-3 text-muted" data-translate="social-prompt">Besuchen Sie mich auch auf:</p>
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <a href="https://www.amazon.de/-/e/B0FWC9TC2B" target="_blank" class="btn btn-outline-dark btn-floating mx-1"><i class="bi bi-amazon"></i></a>
+                                        <a href="https://www.linkedin.com/in/julia-sophie-schelper-52846a253/" target="_blank" class="btn btn-outline-primary btn-floating mx-1"><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+
         </main>
 
 
@@ -576,8 +622,9 @@
 
         <div class="about-img">
             <img src="assets/images/profile.jpg" alt="Placeholder for your profile picture">
-        </div>                <h3 class="cursive-title">Lektorin & Autorin</h3>
-                <p>Ich .</p>
+        </div>
+                <h3 class="cursive-title" data-translate="job-title">Übersetzung & Lektorin</h3>
+
 
 
 
@@ -586,13 +633,10 @@
         <!-- Grid container -->
         <p><i class="bi bi-envelope"></i> julia.sophie@posteo.de</p>
      <p>
-                <a href="https://wa.me/4915679721322" target="_blank" class="text-white" style="text-decoration: none;">
-                    <i class="bi bi-whatsapp"></i> <i class="bi bi-telephone"></i>  +4915679721322
-                </a>
-            </p>        <button type="button" class="btn btn-default btn-lg btn-round"><span class="glyphicon glyphicon-retweet"></span>
-        </button>
+
+             <p><i class="bi bi-phone"></i>  +4915679721322</p>
+
         <!-- Section: Social media -->
-        <section class="mb-2">
                <!-- Amazon -->
             <a
                     data-mdb-ripple-init
@@ -615,6 +659,8 @@
                     target="_blank"
                     role="button"
             ><i class="bi bi-linkedin fa-2x"></i></a>
+
+        </footer>
             </div>
         </aside>
 
@@ -627,25 +673,44 @@
 
 <!-- =================== MODAL SECTION ===================================== -->
 <!-- Modal truck camper-->
-<div class="modal fade" id="example_modal" tabindex="-1" role="dialog" aria-labelledby="truckCamperTitle"
+<div class="modal fade" id="example_modal" tabindex="-1" role="dialog" aria-labelledby="zaehmung1"
      aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="skinDetectionFlutterTitle">Flutter app for skin lesion detection</h5>
+                <h5 class="modal-title" id="skinDetectionFlutterTitle">Seraphines Zähmung</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p style="max-width: 600px">The App is an example for using tensorflow models in two differents way in a mobile flutter app.
-                   Either an on-device running tflite model or a cloud hosted tensorflow model is used for inference.</p>
-                <div style="text-align: left">
+
+            <div class="row">
+                        <div class="col-6">
+                            <img src="assets/images/zaehmung/zaehmung_1.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/images/zaehmung/zaehmung_1_back.jpg" class="img-fluid">
+                        </div>
+                    </div>
+
 
 
                 </div>
                 <div class="modal-footer">
+                               <a
+                    data-mdb-ripple-init
+                    class="btn btn-default btn-circle text-white btn-floating"
+                    style="background-color: #000000;"
+                    title="Amazon"
+                    href="https://www.amazon.de/Seraphines-Z%C3%A4hmung-Morally-Black-Reihe-Band/dp/B0FG14KVX8"
+                    target="_blank"
+                    role="button"
+            ><i class="bi bi-amazon fa-2x"></i
+            ></a>
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -673,16 +738,34 @@
     </script>
 
 
-        <script>
-            document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', function() {
-            // Remove 'active' class from all links
-            document.querySelectorAll('nav a').forEach(item => item.classList.remove('active'));
+    <script>
+                     function loadContent(sectionId) {
+                    // 1. Get all sections
+                    const sections = document.querySelectorAll('.content-section');
 
-            // Add 'active' class to the clicked link
-            this.classList.add('active');
-        });
-    });
+                    // 2. Hide all of them
+                    sections.forEach(section => {
+                        section.style.display = 'none';
+                    });
+
+                    // 3. Show the requested section
+                    const activeSection = document.getElementById(sectionId);
+                    if (activeSection) {
+                        activeSection.style.display = 'block';
+                    }
+
+                    // 4. Update Navigation Active State
+                    // Remove active class from all links
+                    document.querySelectorAll('nav a, .footer-content a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+
+                    // Highlight the nav link that matches the sectionId
+                    const navLink = document.querySelector(`nav a[onclick*='${sectionId}']`);
+                    if (navLink) {
+                        navLink.classList.add('active');
+                    }
+                }
 
     // Initialize the default view
     document.addEventListener('DOMContentLoaded', () => {
@@ -713,8 +796,9 @@
         <div class="container">
             <hr class="footer-divider">
             <div class="footer-content">
-                <p class="footer-info">❀ seit 2020 | Julia Sophie Schelper – Autorin & Lektorin ❀</p>
-                <p class="footer-credits">Built using Kale Pro by <a href="#">LyraThemes</a>.</p>
+                <p class="footer-info">❀ seit 2020 | Julia Sophie Schelper – Übersetzungen & Lektorate ❀</p>
+                            <a href="#" onclick="loadContent('contact')" data-translate="impressum">Impressum</a>
+
             </div>
         </div>
     </footer>
