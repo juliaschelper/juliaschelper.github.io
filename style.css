@@ -38,7 +38,7 @@ header .container {
 
 
 .logo img {
-         max-width: 200px;
+         max-width: 250px;
         height: auto;
 }
  header nav {
@@ -109,6 +109,7 @@ header .container {
 
 about-img {
   text-align: center;
+
 }
 
 .about-img img {
@@ -116,7 +117,7 @@ about-img {
       max-width: 200px;
   display: block;
   margin: 0 auto;
-
+        margin-bottom: 20px; /* Adjust this value as needed */
 
 }
 
@@ -125,8 +126,6 @@ about-img {
     text-align: center;
     border: 1px solid #d81b60;
     color: #d81b60;
-    padding: 8px;
-    margin: 10px 0;
     border-radius: 20px;
     text-decoration: none;
     transition: 0.3s;
@@ -137,19 +136,29 @@ about-img {
     color: white;
 }
 
-.btn-circle {
- margin-right: 20px;
-    width: 70px;
-    height: 70px;
- border-radius: 50%!important;
-  padding: 0.75rem 0.75rem!important;
-    text-align: center;
-}
+    .btn-circle {
+        display: inline-flex;     /* Changed to inline-flex to sit nicely in rows */
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50% !important;
+        padding: 0;
+        text-decoration: none;
+        line-height: 0;           /* Resets line height for the icon */
+    }
+
+    .btn-circle i {
+        font-size: 20px;          /* Control icon size here */
+        line-height: 1;           /* Ensures no extra vertical space */
+        display: inline-block;
+                transform: translate(-2px, 3px); /* First value is Left/Right, Second is Up/Down */
+
+    }
 
 .btn-circle:hover {
       opacity: 0.7;
   }
-
 
 .contact-section {
   padding: 50px 0;
@@ -162,10 +171,7 @@ about-img {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-.social-icon {
-  width: 50px; /* Size of your icons */
-  margin-bottom: 10px;
-}
+
 /* Hover effect for icons */
 .social-icon:hover {
   opacity: 0.7;

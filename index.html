@@ -21,7 +21,7 @@
     <header>
         <div class="container">
         <div class="logo">
-            <img src="assets/images/logo.png" alt="Logo">
+            <img src="assets/images/logo.jpeg" alt="Logo">
         </div>
         <nav>
             <ul>
@@ -29,7 +29,6 @@
             <a href="#" onclick="loadContent('services')" data-translate="services">Lektoratsservice</a>
             <a href="#" onclick="loadContent('projects')" data-translate="portfolio">Portfolio</a>
             <a href="#" onclick="loadContent('testimonials')" data-translate="testimonials">Autorenstimmen</a>
-            <a href="#" onclick="loadContent('contact')" data-translate="contact">Kontakt</a>
 
                  <li class="nav-item dropdown" style="list-style: none; display: inline-block;">
                     <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data- data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,7 +52,7 @@
     <main class="container">
         <main id="content-area">
 
-                <!-- About Me Section -->
+<!-- =================== About Me SECTION ===================================== -->
                 <section id="about_me" class="content-section">
                              <div class="row">
                 <div class="card-body px-4 px-md-5">
@@ -66,7 +65,7 @@
                 </section>
 
 
-     <!-- Services Section -->
+<!-- =================== Services SECTION ===================================== -->
                 <section id="services" class="content-section" style="display:none;">
         <div class="row" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <!-- Lektorat -->
@@ -127,9 +126,6 @@
             </div>
         </div>
 
-        <p class="mt-3">
-
-        </p>
 </section>
 
 
@@ -368,6 +364,20 @@
                 </div>
             </div>
 
+                             <div class="col-md-4 col-lg-3 mItem filterDiv book_translation" data-toggle="modal" data-target="#example_modal">
+                <div class="image-container">
+                    <div class="project-image">
+                        <img src="assets/images/krista_graves/book1.jpg">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <p>Darkbirch Academy: Eine düstere Dark-Academia-Fantasy-Romance mit Drachen & Hexen</p>
+                            <p data-translate="click-for-more">CLICK FOR MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 </section>
 
@@ -571,12 +581,11 @@
 
 
 
-     <!-- contact Section -->
-                    <section id="contact" class="content-section" style="display:none;">
+<!-- =================== Impressum SECTION ===================================== -->
+                    <section id="impressum" class="content-section" style="display:none;">
 
                         <div class="card shadow-sm border-0">
                             <div class="card-body p-4 p-md-5">
-                                <h2 class="mb-4 text-center" data-translate="contact-heading">Kontakt aufnehmen</h2>
                                 <div class="row text-center text-md-left">
                                     <!-- Name & Address -->
                                     <div class="col-md-6 mb-4">
@@ -599,23 +608,16 @@
                                         </p>
                                     </div>
                                 </div>
-                                <hr class="my-4">
-                                <div class="text-center">
-                                    <p class="mb-3 text-muted" data-translate="social-prompt">Besuchen Sie mich auch auf:</p>
-                                    <div class="d-flex justify-content-center gap-3">
-                                        <a href="https://www.amazon.de/-/e/B0FWC9TC2B" target="_blank" class="btn btn-outline-dark btn-floating mx-1"><i class="bi bi-amazon"></i></a>
-                                        <a href="https://www.linkedin.com/in/julia-sophie-schelper-52846a253/" target="_blank" class="btn btn-outline-primary btn-floating mx-1"><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
+                        </div>
+                        </div>
                     </section>
 
 
         </main>
 
 
+<!-- =================== SIDEBAR SECTION ===================================== -->
 
         <aside class="sidebar">
             <div class="profile-card">
@@ -623,20 +625,28 @@
         <div class="about-img">
             <img src="assets/images/profile.jpg" alt="Placeholder for your profile picture">
         </div>
-                <h3 class="cursive-title" data-translate="job-title">Übersetzung & Lektorin</h3>
 
 
-
-
-                <h2 data-translate="contact">Contact Me</h2>
     <footer class="bg-body-tertiary text-center">
-        <!-- Grid container -->
-        <p><i class="bi bi-envelope"></i> julia.sophie@posteo.de</p>
-     <p>
+             <h2 class="cursive-title" data-translate="job-title1">Übersetzung & Lekotrin</h2>
+                        <h2 data-translate="contact">Contact Me</h2>
+
+        <p><i class="bi bi-envelope" ></i> julia.sophie@posteo.de</p>
 
              <p><i class="bi bi-phone"></i>  +4915679721322</p>
 
-        <!-- Section: Social media -->
+
+          <!-- facebook -->
+            <a
+                    data-mdb-ripple-init
+                    class="btn btn-default btn-circle text-white btn-floating"
+                    style="background-color: #0082ca;"
+                    title="facebook"
+                    href="www.facebook.com"
+                    target="_blank"
+                    role="button"
+            ><i class="bi bi-facebook fa-2x"></i></a>
+
                <!-- Amazon -->
             <a
                     data-mdb-ripple-init
@@ -660,19 +670,27 @@
                     role="button"
             ><i class="bi bi-linkedin fa-2x"></i></a>
 
+                    <!-- upwork -->
+            <a
+                    data-mdb-ripple-init
+                    class="btn btn-default btn-circle text-white btn-floating"
+                    style="background-color: #1BAB08;"
+                    title="Upwork"
+                    href="https://www.upwork.com/freelancers/~0152fb1bc07ea9c731"
+                    target="_blank"
+                    role="button"
+            ><i class="icon-upwork"></i
+            ></a>
+
         </footer>
             </div>
         </aside>
-
-
-
 
     </main>
 
 
 
 <!-- =================== MODAL SECTION ===================================== -->
-<!-- Modal truck camper-->
 <div class="modal fade" id="example_modal" tabindex="-1" role="dialog" aria-labelledby="zaehmung1"
      aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -718,24 +736,6 @@
 
 
 <!-- ======================================================================= -->
-
- <script>
-                 function loadContent(sectionId) {
-                // 1. Get all sections
-                const sections = document.querySelectorAll('.content-section');
-
-                // 2. Hide all of them
-                sections.forEach(section => {
-                    section.style.display = 'none';
-                });
-
-                // 3. Show the requested section
-                const activeSection = document.getElementById(sectionId);
-                if (activeSection) {
-                    activeSection.style.display = 'block';
-                }
-            }
-    </script>
 
 
     <script>
@@ -790,14 +790,12 @@
  <script src="project_filter.js"></script>
 
 
-
-
     <footer class="site-footer">
         <div class="container">
             <hr class="footer-divider">
             <div class="footer-content">
-                <p class="footer-info">❀ seit 2020 | Julia Sophie Schelper – Übersetzungen & Lektorate ❀</p>
-                            <a href="#" onclick="loadContent('contact')" data-translate="impressum">Impressum</a>
+                <p class="footer-info">❀ seit 2022 | Julia Sophie Schelper – Übersetzungen & Lektorate ❀</p>
+                            <a href="#" onclick="loadContent('impressum')" data-translate="impressum">Impressum & Datenschutz</a>
 
             </div>
         </div>
