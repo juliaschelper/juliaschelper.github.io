@@ -56,8 +56,8 @@ header .container {
                 justify-content: center;
                 gap: 10px;
                 flex-wrap: wrap;
-                font-family: 'Dancing Script', cursive;
-                font-size: 1.1rem;
+ font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
     }
 
     header nav a {
@@ -81,31 +81,35 @@ header .container {
 
 
 .cursive-title {
-    font-family: 'Dancing Script', cursive;
     color: #d81b60; /* Darker pink/berry color */
     font-size: 2.2rem;
     margin-bottom: 10px;
 }
 
 .section-title {
-    font-family: 'Dancing Script', cursive;
     color: #f06292;
     font-size: 1.5rem;
     margin-top: 30px;
 }
 
-
     #content-area {
-        flex: 2;
+        flex: 5;
     }
 
 
 .sidebar {
-    flex: 1;
+    flex: 2;
         border-left: 1px solid #ccc;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Forces all children to the left edge */
+    padding-left: 75px;      /* Adjust this to move the whole block away from the sidebar edge */
+    padding-bottom: 10px
+}
 
 about-img {
   text-align: center;
@@ -121,8 +125,23 @@ about-img {
 
 }
 
+.social-buttons {
+    display: flex;         /* Required for gap to work */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;             /* This adds the space between buttons */
+    width: 100%;
+    padding: 0 !important;
+    margin: 15px 0 0 0 !important; /* Adds space only at the top */
+}
+
+.social-buttons .btn {
+    margin: 0 !important;  /* CRITICAL: removes Bootstrap's default margins so 'gap' can take over */
+}
+
+
 .sidebar-buttons .btn {
-    display: block;
+    display: block;;
     text-align: center;
     border: 1px solid #d81b60;
     color: #d81b60;
@@ -130,6 +149,7 @@ about-img {
     text-decoration: none;
     transition: 0.3s;
 }
+
 
 .sidebar-buttons .btn:hover {
     background: #d81b60;
@@ -143,9 +163,8 @@ about-img {
         width: 40px;
         height: 40px;
         border-radius: 50% !important;
-        padding: 0;
         text-decoration: none;
-        line-height: 0;           /* Resets line height for the icon */
+        line-height: 1;           /* Resets line height for the icon */
     }
 
     .btn-circle i {
@@ -414,7 +433,6 @@ about-img {
 
 .site-footer {
     text-align: center;
-    font-family: 'Georgia', serif; /* Or your preferred elegant font */
     color: #666;
 
 }
