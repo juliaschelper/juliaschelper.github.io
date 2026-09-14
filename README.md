@@ -1,2 +1,1 @@
-Portfolio page for Julia
-
+Portfolio page for Julia Schelper
